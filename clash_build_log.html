@@ -1,0 +1,130 @@
+<html>
+<head>
+<title>clash build log</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+<body>
+<tt>
+Build started on: <u>21-12-2023 at 19:45.29</u><br />
+Build ended on: <u>21-12-2023 at 19:45.35</u><p />
+<b>-------------- Build: Debug in clash (compiler: NOT FOR PROJECTS! = MinGW GCC + Strict + Fast + Save (Requires Git))---------------</b><br />
+g++git-auto.bat "D:\проекты и другое\clashofrepository-main\main.cpp" -o bin\Debug\clash.exe -mwindows  -Wall -fexceptions  -g  -Wshadow -Winit-self -Wredundant-decls -Wcast-align -Wundef -Wfloat-equal -Winline -Wunreachable-code -Wmissing-declarations -Wmissing-include-dirs -Wswitch-enum -Wswitch-default -Weffc++ -Wmain -Wextra -Wall -g -pipe -fexceptions -Wcast-qual -Wconversion -Wctor-dtor-privacy -Wempty-body -Wformat-security -Wformat=2 -Wignored-qualifiers -Wlogical-op -Wmissing-field-initializers -Wnon-virtual-dtor -Woverloaded-virtual -Wpointer-arith -Wsign-promo -Wstack-usage=8192 -Wstrict-aliasing -Wstrict-null-sentinel -Wtype-limits -Wwrite-strings -D_DEBUG -D_EJUDGE_CLIENT_SIDE -D_EJC<br />
+------------------------------------------------------------------------------------------------------<br />
+Compilation ERRORS:<br />
+<br />
+D:\проекты и другое\clashofrepository-main\main.cpp: In function 'int get_w(std::string)':<br />
+<font color="#0000ff">D:\проекты и другое\clashofrepository-main\main.cpp:10:5: warning: no previous declaration for 'int get_w(std::string)' [-Wmissing-declarations]</font><br />
+ int get_w(string adress)<br />
+     ^<br />
+D:\проекты и другое\clashofrepository-main\main.cpp: In function 'int get_h(std::string)':<br />
+<font color="#0000ff">D:\проекты и другое\clashofrepository-main\main.cpp:20:5: warning: no previous declaration for 'int get_h(std::string)' [-Wmissing-declarations]</font><br />
+ int get_h(string adress)<br />
+     ^<br />
+D:\проекты и другое\clashofrepository-main\main.cpp: In function 'int readFromDir(std::string, Picture*, int)':<br />
+<font color="#0000ff">D:\проекты и другое\clashofrepository-main\main.cpp:30:5: warning: no previous declaration for 'int readFromDir(std::string, Picture*, int)' [-Wmissing-declarations]</font><br />
+ int readFromDir(string adress, Picture menuPic[], int count_pic)<br />
+     ^<br />
+D:\проекты и другое\clashofrepository-main\main.cpp: In function 'std::string runFileDialog(bool)':<br />
+<font color="#0000ff">D:\проекты и другое\clashofrepository-main\main.cpp:64:8: warning: no previous declaration for 'std::string runFileDialog(bool)' [-Wmissing-declarations]</font><br />
+ string runFileDialog(bool isSave)<br />
+        ^<br />
+D:\проекты и другое\clashofrepository-main\main.cpp: In function 'bool SaveBMPFile(char*, HBITMAP, HDC, int, int)':<br />
+<font color="#0000ff">D:\проекты и другое\clashofrepository-main\main.cpp:109:6: warning: no previous declaration for 'bool SaveBMPFile(char*, HBITMAP, HDC, int, int)' [-Wmissing-declarations]</font><br />
+ bool SaveBMPFile(char *filename, HBITMAP bitmap, HDC bitmapDC, int width, int height)<br />
+      ^<br />
+<font color="#0000ff">D:\проекты и другое\clashofrepository-main\main.cpp:111:10: warning: unused variable 'Success' [-Wunused-variable]</font><br />
+     bool Success=0;<br />
+          ^<br />
+D:\проекты и другое\clashofrepository-main\main.cpp: At global scope:<br />
+<font color="#0000ff">D:\проекты и другое\clashofrepository-main\main.cpp:109:6: warning: unused parameter 'bitmap' [-Wunused-parameter]</font><br />
+ bool SaveBMPFile(char *filename, HBITMAP bitmap, HDC bitmapDC, int width, int height)<br />
+      ^<br />
+D:\проекты и другое\clashofrepository-main\main.cpp: In function 'bool ScreenCapture(int, int, int, int, char*, HWND)':<br />
+<font color="#0000ff">D:\проекты и другое\clashofrepository-main\main.cpp:190:6: warning: no previous declaration for 'bool ScreenCapture(int, int, int, int, char*, HWND)' [-Wmissing-declarations]</font><br />
+ bool ScreenCapture(int x, int y, int width, int height, char *filename, HWND hwnd)<br />
+      ^<br />
+In file included from D:\проекты и другое\clashofrepository-main\main.cpp:2:0:<br />
+D:\проекты и другое\clashofrepository-main\button.cpp: In constructor 'Button::Button()':<br />
+<font color="#0000ff">D:\проекты и другое\clashofrepository-main\button.cpp:2:8: warning: 'Button::x' should be initialized in the member initialization list [-Weffc++]</font><br />
+ struct Button<br />
+        ^<br />
+<font color="#0000ff">D:\проекты и другое\clashofrepository-main\button.cpp:2:8: warning: 'Button::y' should be initialized in the member initialization list [-Weffc++]</font><br />
+<font color="#0000ff">D:\проекты и другое\clashofrepository-main\button.cpp:2:8: warning: 'Button::name' should be initialized in the member initialization list [-Weffc++]</font><br />
+<font color="#0000ff">D:\проекты и другое\clashofrepository-main\button.cpp:2:8: warning: 'Button::category' should be initialized in the member initialization list [-Weffc++]</font><br />
+D:\проекты и другое\clashofrepository-main\main.cpp: In function 'int main()':<br />
+D:\проекты и другое\clashofrepository-main\main.cpp:235:25: note: synthesized method 'Button::Button()' first required here <br />
+     Button btn[count_btn];<br />
+                         ^<br />
+In file included from D:\проекты и другое\clashofrepository-main\main.cpp:3:0:<br />
+D:\проекты и другое\clashofrepository-main\picture.cpp: In constructor 'Picture::Picture()':<br />
+<font color="#0000ff">D:\проекты и другое\clashofrepository-main\picture.cpp:7:8: warning: 'Picture::x' should be initialized in the member initialization list [-Weffc++]</font><br />
+ struct Picture<br />
+        ^<br />
+<font color="#0000ff">D:\проекты и другое\clashofrepository-main\picture.cpp:7:8: warning: 'Picture::y' should be initialized in the member initialization list [-Weffc++]</font><br />
+<font color="#0000ff">D:\проекты и другое\clashofrepository-main\picture.cpp:7:8: warning: 'Picture::adress' should be initialized in the member initialization list [-Weffc++]</font><br />
+<font color="#0000ff">D:\проекты и другое\clashofrepository-main\picture.cpp:7:8: warning: 'Picture::pic' should be initialized in the member initialization list [-Weffc++]</font><br />
+<font color="#0000ff">D:\проекты и другое\clashofrepository-main\picture.cpp:7:8: warning: 'Picture::w_scr' should be initialized in the member initialization list [-Weffc++]</font><br />
+<font color="#0000ff">D:\проекты и другое\clashofrepository-main\picture.cpp:7:8: warning: 'Picture::h_scr' should be initialized in the member initialization list [-Weffc++]</font><br />
+<font color="#0000ff">D:\проекты и другое\clashofrepository-main\picture.cpp:7:8: warning: 'Picture::w' should be initialized in the member initialization list [-Weffc++]</font><br />
+<font color="#0000ff">D:\проекты и другое\clashofrepository-main\picture.cpp:7:8: warning: 'Picture::h' should be initialized in the member initialization list [-Weffc++]</font><br />
+<font color="#0000ff">D:\проекты и другое\clashofrepository-main\picture.cpp:7:8: warning: 'Picture::visible' should be initialized in the member initialization list [-Weffc++]</font><br />
+<font color="#0000ff">D:\проекты и другое\clashofrepository-main\picture.cpp:7:8: warning: 'Picture::category' should be initialized in the member initialization list [-Weffc++]</font><br />
+D:\проекты и другое\clashofrepository-main\main.cpp: In function 'int main()':<br />
+D:\проекты и другое\clashofrepository-main\main.cpp:249:24: note: synthesized method 'Picture::Picture()' first required here <br />
+     Picture menuPic[100];<br />
+                        ^<br />
+<font color="#0000ff">D:\проекты и другое\clashofrepository-main\main.cpp:265:40: warning: conversion to 'int' from 'double' may alter its value [-Wconversion]</font><br />
+         menuPic[i].w_scr = menuPic[i].w/1.5;<br />
+                                        ^<br />
+<font color="#0000ff">D:\проекты и другое\clashofrepository-main\main.cpp:266:40: warning: conversion to 'int' from 'double' may alter its value [-Wconversion]</font><br />
+         menuPic[i].h_scr = menuPic[i].h/1.5;<br />
+                                        ^<br />
+<font color="#0000ff">D:\проекты и другое\clashofrepository-main\main.cpp:270:16: warning: declaration of 'str' shadows a previous local [-Wshadow]</font><br />
+         string str = menuPic[i].adress;<br />
+                ^<br />
+<font color="#0000ff">D:\проекты и другое\clashofrepository-main\main.cpp:231:10: warning: shadowed declaration is here [-Wshadow]</font><br />
+     char str[100];<br />
+          ^<br />
+<font color="#0000ff">D:\проекты и другое\clashofrepository-main\main.cpp:348:21: warning: declaration of 'npic' shadows a previous local [-Wshadow]</font><br />
+             for(int npic=0; npic&lt;count_pic; npic++)<br />
+                     ^<br />
+<font color="#0000ff">D:\проекты и другое\clashofrepository-main\main.cpp:283:9: warning: shadowed declaration is here [-Wshadow]</font><br />
+     int npic = 0;<br />
+         ^<br />
+<font color="#0000ff">D:\проекты и другое\clashofrepository-main\main.cpp:419:67: warning: conversion to 'int' from 'double' may alter its value [-Wconversion]</font><br />
+                     centrPic[vybor].w_scr = centrPic[vybor].w_scr * 1.1;<br />
+                                                                   ^<br />
+<font color="#0000ff">D:\проекты и другое\clashofrepository-main\main.cpp:420:67: warning: conversion to 'int' from 'double' may alter its value [-Wconversion]</font><br />
+                     centrPic[vybor].h_scr = centrPic[vybor].h_scr * 1.1;<br />
+                                                                   ^<br />
+<font color="#0000ff">D:\проекты и другое\clashofrepository-main\main.cpp:425:67: warning: conversion to 'int' from 'double' may alter its value [-Wconversion]</font><br />
+                     centrPic[vybor].w_scr = centrPic[vybor].w_scr * 0.9;<br />
+                                                                   ^<br />
+<font color="#0000ff">D:\проекты и другое\clashofrepository-main\main.cpp:426:67: warning: conversion to 'int' from 'double' may alter its value [-Wconversion]</font><br />
+                     centrPic[vybor].h_scr = centrPic[vybor].h_scr * 0.9;<br />
+                                                                   ^<br />
+<font color="#0000ff">D:\проекты и другое\clashofrepository-main\main.cpp:434:52: warning: conversion to 'int' from 'double' may alter its value [-Wconversion]</font><br />
+                     centrPic[vybor].x = txMouseX() - centrPic[vybor].w_scr/2;<br />
+                                                    ^<br />
+<font color="#0000ff">D:\проекты и другое\clashofrepository-main\main.cpp:435:52: warning: conversion to 'int' from 'double' may alter its value [-Wconversion]</font><br />
+                     centrPic[vybor].y = txMouseY() - centrPic[vybor].h_scr/2;<br />
+                                                    ^<br />
+<font color="#0000ff">D:\проекты и другое\clashofrepository-main\main.cpp:531:79: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]</font><br />
+                     ScreenCapture(250, 100, 700, 600, "result.bmp", txWindow());<br />
+                                                                               ^<br />
+<font color="#0000ff">D:\проекты и другое\clashofrepository-main\main.cpp:231:10: warning: unused variable 'str' [-Wunused-variable]</font><br />
+     char str[100];<br />
+          ^<br />
+<font color="#0000ff">D:\проекты и другое\clashofrepository-main\main.cpp:283:9: warning: unused variable 'npic' [-Wunused-variable]</font><br />
+     int npic = 0;<br />
+         ^<br />
+<font color="#0000ff">D:\проекты и другое\clashofrepository-main\main.cpp:575:1: warning: stack usage might be 9136 bytes [-Wstack-usage=]</font><br />
+ }<br />
+ ^<br />
+------------------------------------------------------------------------------------------------------<br />
+Autosaving to the Git repository in D:/  /clashofrepository-main/.git-auto/... <br />
+Output size is 2,30 MB<br />
+<font color="#0000ff">Process terminated with status 0 (0 minutes, 6 seconds)</font><br />
+<font color="#0000ff">0 errors, 38 warnings (0 minutes, 6 seconds)</font><br />
+</tt>
+</body>
+</html>

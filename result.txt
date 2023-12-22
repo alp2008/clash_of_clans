@@ -1,0 +1,15 @@
+500
+100
+pictures/defense/Istochnik-lavy-Clash-of-Clans.bmp
+130
+117
+640
+191
+pictures/defense/monolith_2.bmp
+134
+188
+404
+184
+pictures/defense/dolbit.bmp
+159
+190

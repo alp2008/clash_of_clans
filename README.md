@@ -1,1 +1,1 @@
-# clash_of_clans
+# clash

@@ -1,0 +1,1342 @@
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\проекты и другое\clash-main\main.exe, файл: d:\program\codeblocks\mingw\include\txlib.h, строка: 13657, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0x3170 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004226F0 in D:\проекты и другое\clash-main\main.exe: txTransparentBlt() at d:/program/codeblocks/mingw/include/txlib.h (13657)
+
+# 1 0x0042C386 in D:\проекты и другое\clash-main\main.exe: main() at D:/проекты и другое/clash-main/main.cpp (40):
+
+     38:         if (Buttonclick(50));
+     39:         {
+=>   40:             txTransparentBlt (txDC(), 100, 200, 300, 700, pic1, 0, 0, TX_WHITE);
+     41:         }
+     42: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at d:\program\codeblocks\mingw\include\txlib.h (13657):
+
+  13655: 
+  13656: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13657: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13658: 
+  13659:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in int main() at D:\проекты и другое\clash-main\main.cpp (40):
+
+     38:         if (Buttonclick(50));
+     39:         {
+=>   40:             txTransparentBlt (txDC(), 100, 200, 300, 700, pic1, 0, 0, TX_WHITE);
+     41:         }
+     42: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\program\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 18 2023 14:41:55, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 18 2023 14:42:00
+
+Run file:	D:\проекты и другое\clash-main\main.exe
+Directory:	D:\проекты и другое\clash-main
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\проекты и другое\clash-main\main.exe, файл: d:\program\codeblocks\mingw\include\txlib.h, строка: 13657, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0xBE0 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004226F0 in D:\проекты и другое\clash-main\main.exe: txTransparentBlt() at d:/program/codeblocks/mingw/include/txlib.h (13657)
+
+# 1 0x0042C386 in D:\проекты и другое\clash-main\main.exe: main() at D:/проекты и другое/clash-main/main.cpp (40):
+
+     38:         if (Buttonclick(50));
+     39:         {
+=>   40:             txTransparentBlt (txDC(), 200, 200, 200, 200, pic1, 0, 0, TX_WHITE);
+     41:         }
+     42: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at d:\program\codeblocks\mingw\include\txlib.h (13657):
+
+  13655: 
+  13656: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13657: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13658: 
+  13659:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in int main() at D:\проекты и другое\clash-main\main.cpp (40):
+
+     38:         if (Buttonclick(50));
+     39:         {
+=>   40:             txTransparentBlt (txDC(), 200, 200, 200, 200, pic1, 0, 0, TX_WHITE);
+     41:         }
+     42: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\program\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 18 2023 14:43:56, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 18 2023 14:44:00
+
+Run file:	D:\проекты и другое\clash-main\main.exe
+Directory:	D:\проекты и другое\clash-main
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\проекты и другое\clash-main\main.exe, файл: d:\program\codeblocks\mingw\include\txlib.h, строка: 13657, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0x227C (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004226F0 in D:\проекты и другое\clash-main\main.exe: txTransparentBlt() at d:/program/codeblocks/mingw/include/txlib.h (13657)
+
+# 1 0x0042C37E in D:\проекты и другое\clash-main\main.exe: main() at D:/проекты и другое/clash-main/main.cpp (40):
+
+     38:         if (Buttonclick(50));
+     39:         {
+=>   40:             txTransparentBlt (txDC(), 200, 200, 0, 0, pic1, 0, 0, TX_WHITE);
+     41:         }
+     42: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at d:\program\codeblocks\mingw\include\txlib.h (13657):
+
+  13655: 
+  13656: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13657: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13658: 
+  13659:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in int main() at D:\проекты и другое\clash-main\main.cpp (40):
+
+     38:         if (Buttonclick(50));
+     39:         {
+=>   40:             txTransparentBlt (txDC(), 200, 200, 0, 0, pic1, 0, 0, TX_WHITE);
+     41:         }
+     42: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\program\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 18 2023 14:49:09, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 18 2023 14:49:13
+
+Run file:	D:\проекты и другое\clash-main\main.exe
+Directory:	D:\проекты и другое\clash-main
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\проекты и другое\clash-main\main.exe, файл: d:\program\codeblocks\mingw\include\txlib.h, строка: 13657, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0x128 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004226F0 in D:\проекты и другое\clash-main\main.exe: txTransparentBlt() at d:/program/codeblocks/mingw/include/txlib.h (13657)
+
+# 1 0x0042C386 in D:\проекты и другое\clash-main\main.exe: main() at D:/проекты и другое/clash-main/main.cpp (40):
+
+     38:         if (Buttonclick(50));
+     39:         {
+=>   40:             txTransparentBlt (txDC(), 200, 200, 80, 90, pic1, 0, 0, TX_WHITE);
+     41:         }
+     42: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at d:\program\codeblocks\mingw\include\txlib.h (13657):
+
+  13655: 
+  13656: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13657: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13658: 
+  13659:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in int main() at D:\проекты и другое\clash-main\main.cpp (40):
+
+     38:         if (Buttonclick(50));
+     39:         {
+=>   40:             txTransparentBlt (txDC(), 200, 200, 80, 90, pic1, 0, 0, TX_WHITE);
+     41:         }
+     42: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\program\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 18 2023 14:50:33, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 18 2023 14:50:37
+
+Run file:	D:\проекты и другое\clash-main\main.exe
+Directory:	D:\проекты и другое\clash-main
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\проекты и другое\clash-main\main.exe, файл: d:\program\codeblocks\mingw\include\txlib.h, строка: 13657, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0x120 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004226F0 in D:\проекты и другое\clash-main\main.exe: txTransparentBlt() at d:/program/codeblocks/mingw/include/txlib.h (13657)
+
+# 1 0x0042C386 in D:\проекты и другое\clash-main\main.exe: main() at D:/проекты и другое/clash-main/main.cpp (40):
+
+     38:         if (Buttonclick(50));
+     39:         {
+=>   40:             txTransparentBlt (txDC(), 300, 300, 200, 200, pic1, 0, 0, TX_WHITE);
+     41:         }
+     42: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at d:\program\codeblocks\mingw\include\txlib.h (13657):
+
+  13655: 
+  13656: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13657: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13658: 
+  13659:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in int main() at D:\проекты и другое\clash-main\main.cpp (40):
+
+     38:         if (Buttonclick(50));
+     39:         {
+=>   40:             txTransparentBlt (txDC(), 300, 300, 200, 200, pic1, 0, 0, TX_WHITE);
+     41:         }
+     42: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\program\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 18 2023 14:53:22, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 18 2023 14:53:26
+
+Run file:	D:\проекты и другое\clash-main\main.exe
+Directory:	D:\проекты и другое\clash-main
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\проекты и другое\clash-main\main.exe, файл: d:\program\codeblocks\mingw\include\txlib.h, строка: 13657, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0x4048 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004226F0 in D:\проекты и другое\clash-main\main.exe: txTransparentBlt() at d:/program/codeblocks/mingw/include/txlib.h (13657)
+
+# 1 0x0042C386 in D:\проекты и другое\clash-main\main.exe: main() at D:/проекты и другое/clash-main/main.cpp (40):
+
+     38:         if (Buttonclick(50));
+     39:         {
+=>   40:             txTransparentBlt (txDC(), 300, 300, 200, 200, pic2, 0, 0, TX_WHITE);
+     41:         }
+     42: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at d:\program\codeblocks\mingw\include\txlib.h (13657):
+
+  13655: 
+  13656: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13657: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13658: 
+  13659:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in int main() at D:\проекты и другое\clash-main\main.cpp (40):
+
+     38:         if (Buttonclick(50));
+     39:         {
+=>   40:             txTransparentBlt (txDC(), 300, 300, 200, 200, pic2, 0, 0, TX_WHITE);
+     41:         }
+     42: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\program\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 18 2023 14:54:00, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 18 2023 14:54:04
+
+Run file:	D:\проекты и другое\clash-main\main.exe
+Directory:	D:\проекты и другое\clash-main
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\проекты и другое\clash-main\main.exe, файл: d:\program\codeblocks\mingw\include\txlib.h, строка: 13657, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0x42C (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004226F0 in D:\проекты и другое\clash-main\main.exe: txTransparentBlt() at d:/program/codeblocks/mingw/include/txlib.h (13657)
+
+# 1 0x0042C386 in D:\проекты и другое\clash-main\main.exe: main() at D:/проекты и другое/clash-main/main.cpp (40):
+
+     38:         if (Buttonclick(50));
+     39:         {
+=>   40:             txTransparentBlt (txDC(), 300, 300, 200, 200, pic2, 0, 0, TX_WHITE);
+     41:         }
+     42: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at d:\program\codeblocks\mingw\include\txlib.h (13657):
+
+  13655: 
+  13656: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13657: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13658: 
+  13659:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in int main() at D:\проекты и другое\clash-main\main.cpp (40):
+
+     38:         if (Buttonclick(50));
+     39:         {
+=>   40:             txTransparentBlt (txDC(), 300, 300, 200, 200, pic2, 0, 0, TX_WHITE);
+     41:         }
+     42: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\program\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 18 2023 15:01:03, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 18 2023 15:01:07
+
+Run file:	D:\проекты и другое\clash-main\main.exe
+Directory:	D:\проекты и другое\clash-main
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\проекты и другое\clash-main\main.exe, файл: d:\program\codeblocks\mingw\include\txlib.h, строка: 13657, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0x4CE8 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004226F0 in D:\проекты и другое\clash-main\main.exe: txTransparentBlt() at d:/program/codeblocks/mingw/include/txlib.h (13657)
+
+# 1 0x0042C38E in D:\проекты и другое\clash-main\main.exe: main() at D:/проекты и другое/clash-main/main.cpp (40):
+
+     38:         if (Buttonclick(50))
+     39:         {
+=>   40:             txTransparentBlt (txDC(), 300, 300, 200, 200, pic2, 0, 0, TX_WHITE);
+     41:         }
+     42: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at d:\program\codeblocks\mingw\include\txlib.h (13657):
+
+  13655: 
+  13656: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13657: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13658: 
+  13659:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in int main() at D:\проекты и другое\clash-main\main.cpp (40):
+
+     38:         if (Buttonclick(50))
+     39:         {
+=>   40:             txTransparentBlt (txDC(), 300, 300, 200, 200, pic2, 0, 0, TX_WHITE);
+     41:         }
+     42: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\program\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 18 2023 15:01:33, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 18 2023 15:01:37
+
+Run file:	D:\проекты и другое\clash-main\main.exe
+Directory:	D:\проекты и другое\clash-main
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\проекты и другое\clash-main\main.exe, файл: d:\program\codeblocks\mingw\include\txlib.h, строка: 13657, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0x2B5C (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004226F0 in D:\проекты и другое\clash-main\main.exe: txTransparentBlt() at d:/program/codeblocks/mingw/include/txlib.h (13657)
+
+# 1 0x0042C392 in D:\проекты и другое\clash-main\main.exe: main() at D:/проекты и другое/clash-main/main.cpp (40):
+
+     38:         if (Buttonclick(50))
+     39:         {
+=>   40:             txTransparentBlt (txDC(), 300, 300, 200, 200, pic2, TX_WHITE);
+     41:         }
+     42: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at d:\program\codeblocks\mingw\include\txlib.h (13657):
+
+  13655: 
+  13656: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13657: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13658: 
+  13659:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in int main() at D:\проекты и другое\clash-main\main.cpp (40):
+
+     38:         if (Buttonclick(50))
+     39:         {
+=>   40:             txTransparentBlt (txDC(), 300, 300, 200, 200, pic2, TX_WHITE);
+     41:         }
+     42: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\program\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 18 2023 15:01:57, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 18 2023 15:02:01
+
+Run file:	D:\проекты и другое\clash-main\main.exe
+Directory:	D:\проекты и другое\clash-main
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\проекты и другое\clash-main\main.exe, файл: d:\program\codeblocks\mingw\include\txlib.h, строка: 13657, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0x4B7C (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004226F0 in D:\проекты и другое\clash-main\main.exe: txTransparentBlt() at d:/program/codeblocks/mingw/include/txlib.h (13657)
+
+# 1 0x0042C434 in D:\проекты и другое\clash-main\main.exe: main() at D:/проекты и другое/clash-main/main.cpp (45):
+
+     43:         if (Buttonclick(250))
+     44:         {
+=>   45:             txTransparentBlt (txDC(), 300, 300, 225, 225, pic1, TX_WHITE);
+     46:         }
+     47: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at d:\program\codeblocks\mingw\include\txlib.h (13657):
+
+  13655: 
+  13656: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13657: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13658: 
+  13659:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in int main() at D:\проекты и другое\clash-main\main.cpp (45):
+
+     43:         if (Buttonclick(250))
+     44:         {
+=>   45:             txTransparentBlt (txDC(), 300, 300, 225, 225, pic1, TX_WHITE);
+     46:         }
+     47: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\program\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 18 2023 15:02:09, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 18 2023 15:02:12
+
+Run file:	D:\проекты и другое\clash-main\main.exe
+Directory:	D:\проекты и другое\clash-main
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\проекты и другое\clash-main\main.exe, файл: d:\program\codeblocks\mingw\include\txlib.h, строка: 13657, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0x99C (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004226F0 in D:\проекты и другое\clash-main\main.exe: txTransparentBlt() at d:/program/codeblocks/mingw/include/txlib.h (13657)
+
+# 1 0x0042C434 in D:\проекты и другое\clash-main\main.exe: main() at D:/проекты и другое/clash-main/main.cpp (45):
+
+     43:         if (Buttonclick(250))
+     44:         {
+=>   45:             txTransparentBlt (txDC(), 300, 300, 225, 225, pic1, TX_WHITE);
+     46:         }
+     47: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at d:\program\codeblocks\mingw\include\txlib.h (13657):
+
+  13655: 
+  13656: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13657: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13658: 
+  13659:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in int main() at D:\проекты и другое\clash-main\main.cpp (45):
+
+     43:         if (Buttonclick(250))
+     44:         {
+=>   45:             txTransparentBlt (txDC(), 300, 300, 225, 225, pic1, TX_WHITE);
+     46:         }
+     47: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\program\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 18 2023 15:02:46, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 18 2023 15:02:50
+
+Run file:	D:\проекты и другое\clash-main\main.exe
+Directory:	D:\проекты и другое\clash-main
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\проекты и другое\clash-main\main.exe, файл: d:\program\codeblocks\mingw\include\txlib.h, строка: 13657, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0x2D0C (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004226F0 in D:\проекты и другое\clash-main\main.exe: txTransparentBlt() at d:/program/codeblocks/mingw/include/txlib.h (13657)
+
+# 1 0x0042C442 in D:\проекты и другое\clash-main\main.exe: main() at D:/проекты и другое/clash-main/main.cpp (50):
+
+     48:         if (Buttonclick(250))
+     49:         {
+=>   50:             txTransparentBlt (txDC(), 300, 500, 225, 225, pic1, TX_WHITE);
+     51:         }
+     52: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at d:\program\codeblocks\mingw\include\txlib.h (13657):
+
+  13655: 
+  13656: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13657: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13658: 
+  13659:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in int main() at D:\проекты и другое\clash-main\main.cpp (50):
+
+     48:         if (Buttonclick(250))
+     49:         {
+=>   50:             txTransparentBlt (txDC(), 300, 500, 225, 225, pic1, TX_WHITE);
+     51:         }
+     52: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\program\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 18 2023 18:51:10, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 18 2023 18:51:16
+
+Run file:	D:\проекты и другое\clash-main\main.exe
+Directory:	D:\проекты и другое\clash-main
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\проекты и другое\clash-main\main.exe, файл: d:\program\codeblocks\mingw\include\txlib.h, строка: 13657, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0x938 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004226F0 in D:\проекты и другое\clash-main\main.exe: txTransparentBlt() at d:/program/codeblocks/mingw/include/txlib.h (13657)
+
+# 1 0x0042C442 in D:\проекты и другое\clash-main\main.exe: main() at D:/проекты и другое/clash-main/main.cpp (50):
+
+     48:         if (Buttonclick(250))
+     49:         {
+=>   50:             txTransparentBlt (txDC(), 300, 500, 225, 225, pic1, TX_WHITE);
+     51:         }
+     52: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at d:\program\codeblocks\mingw\include\txlib.h (13657):
+
+  13655: 
+  13656: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13657: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13658: 
+  13659:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in int main() at D:\проекты и другое\clash-main\main.cpp (50):
+
+     48:         if (Buttonclick(250))
+     49:         {
+=>   50:             txTransparentBlt (txDC(), 300, 500, 225, 225, pic1, TX_WHITE);
+     51:         }
+     52: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\program\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 18 2023 18:51:29, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 18 2023 18:51:33
+
+Run file:	D:\проекты и другое\clash-main\main.exe
+Directory:	D:\проекты и другое\clash-main
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\проекты и другое\clash-main\main.exe, файл: d:\program\codeblocks\mingw\include\txlib.h, строка: 13657, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0x2FA8 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004226F0 in D:\проекты и другое\clash-main\main.exe: txTransparentBlt() at d:/program/codeblocks/mingw/include/txlib.h (13657)
+
+# 1 0x0042C3A0 in D:\проекты и другое\clash-main\main.exe: main() at D:/проекты и другое/clash-main/main.cpp (45):
+
+     43:         if (pic1_visible)
+     44:         {
+=>   45:             txTransparentBlt (txDC(), 300, 500, 200, 200, pic2, TX_WHITE);
+     46:         }
+     47: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at d:\program\codeblocks\mingw\include\txlib.h (13657):
+
+  13655: 
+  13656: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13657: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13658: 
+  13659:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in int main() at D:\проекты и другое\clash-main\main.cpp (45):
+
+     43:         if (pic1_visible)
+     44:         {
+=>   45:             txTransparentBlt (txDC(), 300, 500, 200, 200, pic2, TX_WHITE);
+     46:         }
+     47: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\program\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 18 2023 18:51:41, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 18 2023 18:51:44
+
+Run file:	D:\проекты и другое\clash-main\main.exe
+Directory:	D:\проекты и другое\clash-main
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: D:\проекты и другое\clash-main\main.exe, файл: d:\program\codeblocks\mingw\include\txlib.h, строка: 13678, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Прямоугольник копируемой области {1.67772e+007, 0, 1.67774e+007, 225} не полностью лежит внутри изображения-источника {0, 0, 225, 225}, функция txTransparentBlt() работать не будет.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0x11C (Main), GetLastError(): 13 (Недопустимые данные). 
+From: d:\program\codeblocks\mingw\include\txlib.h (13677) bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF).
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004228EC in D:\проекты и другое\clash-main\main.exe: txTransparentBlt() at d:/program/codeblocks/mingw/include/txlib.h (13678)
+
+# 1 0x0042C442 in D:\проекты и другое\clash-main\main.exe: main() at D:/проекты и другое/clash-main/main.cpp (50):
+
+     48:         if (Buttonclick(250))
+     49:         {
+=>   50:             txTransparentBlt (txDC(), 300, 500, 225, 225, pic1, TX_WHITE);
+     51:         }
+     52: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at d:\program\codeblocks\mingw\include\txlib.h (13677):
+
+  13675:         {
+  13676: $       SetLastError (ERROR_INVALID_DATA);
+=>13677: $       TX_ERROR ("Прямоугольник копируемой области {%g, %g, %g, %g} не полностью лежит внутри изображения-источника {%d, %d, %d, %d}, "
+  13678:                   "функция txTransparentBlt() работать не будет.", xSource, ySource, xSource + width, ySource + height, 0, 0, (int) size.x, (int) size.y);
+  13679:         }
+
+# 1 in int main() at D:\проекты и другое\clash-main\main.cpp (50):
+
+     48:         if (Buttonclick(250))
+     49:         {
+=>   50:             txTransparentBlt (txDC(), 300, 500, 225, 225, pic1, TX_WHITE);
+     51:         }
+     52: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\program\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 18 2023 18:51:58, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 18 2023 18:52:02
+
+Run file:	D:\проекты и другое\clash-main\main.exe
+Directory:	D:\проекты и другое\clash-main
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: D:\проекты и другое\clash-main\main.exe, файл: d:\program\codeblocks\mingw\include\txlib.h, строка: 13678, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Прямоугольник копируемой области {1.67772e+007, 0, 1.67774e+007, 200} не полностью лежит внутри изображения-источника {0, 0, 200, 200}, функция txTransparentBlt() работать не будет.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0x330C (Main), GetLastError(): 13 (Недопустимые данные). 
+From: d:\program\codeblocks\mingw\include\txlib.h (13677) bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF).
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004228EC in D:\проекты и другое\clash-main\main.exe: txTransparentBlt() at d:/program/codeblocks/mingw/include/txlib.h (13678)
+
+# 1 0x0042C3A0 in D:\проекты и другое\clash-main\main.exe: main() at D:/проекты и другое/clash-main/main.cpp (45):
+
+     43:         if (pic1_visible)
+     44:         {
+=>   45:             txTransparentBlt (txDC(), 300, 500, 200, 200, pic2, TX_WHITE);
+     46:         }
+     47: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at d:\program\codeblocks\mingw\include\txlib.h (13677):
+
+  13675:         {
+  13676: $       SetLastError (ERROR_INVALID_DATA);
+=>13677: $       TX_ERROR ("Прямоугольник копируемой области {%g, %g, %g, %g} не полностью лежит внутри изображения-источника {%d, %d, %d, %d}, "
+  13678:                   "функция txTransparentBlt() работать не будет.", xSource, ySource, xSource + width, ySource + height, 0, 0, (int) size.x, (int) size.y);
+  13679:         }
+
+# 1 in int main() at D:\проекты и другое\clash-main\main.cpp (45):
+
+     43:         if (pic1_visible)
+     44:         {
+=>   45:             txTransparentBlt (txDC(), 300, 500, 200, 200, pic2, TX_WHITE);
+     46:         }
+     47: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\program\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 18 2023 18:52:09, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Sep 18 2023 18:52:13
+
+Run file:	D:\проекты и другое\clash-main\main.exe
+Directory:	D:\проекты и другое\clash-main
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: D:\проекты и другое\clashofclans-main\main.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00451C0C в функции _M_is_leaked() в файле d:/program/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0xFFFFFFFC в модуле D:\проекты и другое\clashofclans-main\main.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005082FC (32-bit), Flags: CMdRe0, Thread: 0x2BC4 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00451C0C in D:\проекты и другое\clashofclans-main\main.exe: _M_is_leaked() at d:/program/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x00480CCB in D:\проекты и другое\clashofclans-main\main.exe: swap() at d:/program/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x00488699 in D:\проекты и другое\clashofclans-main\main.exe: operator=() at d:/program/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0044C201 in D:\проекты и другое\clashofclans-main\main.exe: operator=() at d:/program/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0042BFC9 in D:\проекты и другое\clashofclans-main\main.exe: main() at D:/проекты и другое/clashofclans-main/main.cpp (14):
+
+     12:     btn[0] = {50, "обычные здания", "обычные здания"};
+     13:     btn[1] = {250, "защитные здания", "защитные здания"};
+=>   14:     btn[2] = {450, "ресурсы", "ресурсы"};
+     15: 
+     16:     Picture menuPic[count_pic];
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in int main() at D:\проекты и другое\clashofclans-main\main.cpp (7):
+
+      5: int main()
+      6: {
+=>    7:     txCreateWindow (1200, 700);
+      8:     //инициализация кнопок
+      9:     int count_btn=2;
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\program\codeblocks\mingw\include\txlib.h
+Compiled:	Oct 23 2023 19:57:42, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Oct 23 2023 19:57:52
+
+Run file:	D:\проекты и другое\clashofclans-main\main.exe
+Directory:	D:\проекты и другое\clashofclans-main
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\проекты и другое\clashofclans-main\main.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00451C0C в функции _M_is_leaked() в файле d:/program/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0xFFFFFFFC в модуле D:\проекты и другое\clashofclans-main\main.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005082FC (32-bit), Flags: CMdRe0, Thread: 0x2BC4 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00451C0C in D:\проекты и другое\clashofclans-main\main.exe: _M_is_leaked() at d:/program/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x00480CCB in D:\проекты и другое\clashofclans-main\main.exe: swap() at d:/program/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x00488699 in D:\проекты и другое\clashofclans-main\main.exe: operator=() at d:/program/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0044C201 in D:\проекты и другое\clashofclans-main\main.exe: operator=() at d:/program/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0042BFC9 in D:\проекты и другое\clashofclans-main\main.exe: main() at D:/проекты и другое/clashofclans-main/main.cpp (14):
+
+     12:     btn[0] = {50, "обычные здания", "обычные здания"};
+     13:     btn[1] = {250, "защитные здания", "защитные здания"};
+=>   14:     btn[2] = {450, "ресурсы", "ресурсы"};
+     15: 
+     16:     Picture menuPic[count_pic];
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in int main() at D:\проекты и другое\clashofclans-main\main.cpp (7):
+
+      5: int main()
+      6: {
+=>    7:     txCreateWindow (1200, 700);
+      8:     //инициализация кнопок
+      9:     int count_btn=2;
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\program\codeblocks\mingw\include\txlib.h
+Compiled:	Oct 23 2023 19:57:42, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Oct 23 2023 19:57:52
+
+Run file:	D:\проекты и другое\clashofclans-main\main.exe
+Directory:	D:\проекты и другое\clashofclans-main
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: D:\проекты и другое\clashofclans-main\main.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00451C0C в функции _M_is_leaked() в файле d:/program/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0xFFFFFFFC в модуле D:\проекты и другое\clashofclans-main\main.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005082FC (32-bit), Flags: CMdRe0, Thread: 0x4408 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00451C0C in D:\проекты и другое\clashofclans-main\main.exe: _M_is_leaked() at d:/program/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x00480CCB in D:\проекты и другое\clashofclans-main\main.exe: swap() at d:/program/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x00488699 in D:\проекты и другое\clashofclans-main\main.exe: operator=() at d:/program/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0044C201 in D:\проекты и другое\clashofclans-main\main.exe: operator=() at d:/program/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0042BFC9 in D:\проекты и другое\clashofclans-main\main.exe: main() at D:/проекты и другое/clashofclans-main/main.cpp (14):
+
+     12:     btn[0] = {50, "обычные здания", "обычные здания"};
+     13:     btn[1] = {250, "защитные здания", "защитные здания"};
+=>   14:     btn[2] = {450, "ресурсы", "ресурсы"};
+     15: 
+     16:     Picture menuPic[count_pic];
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in int main() at D:\проекты и другое\clashofclans-main\main.cpp (7):
+
+      5: int main()
+      6: {
+=>    7:     txCreateWindow (1200, 700);
+      8:     //инициализация кнопок
+      9:     int count_btn=2;
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\program\codeblocks\mingw\include\txlib.h
+Compiled:	Oct 23 2023 19:59:20, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Oct 23 2023 19:59:25
+
+Run file:	D:\проекты и другое\clashofclans-main\main.exe
+Directory:	D:\проекты и другое\clashofclans-main
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\проекты и другое\clashofclans-main\main.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00451C0C в функции _M_is_leaked() в файле d:/program/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0xFFFFFFFC в модуле D:\проекты и другое\clashofclans-main\main.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005082FC (32-bit), Flags: CMdRe0, Thread: 0x4408 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00451C0C in D:\проекты и другое\clashofclans-main\main.exe: _M_is_leaked() at d:/program/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x00480CCB in D:\проекты и другое\clashofclans-main\main.exe: swap() at d:/program/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x00488699 in D:\проекты и другое\clashofclans-main\main.exe: operator=() at d:/program/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0044C201 in D:\проекты и другое\clashofclans-main\main.exe: operator=() at d:/program/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0042BFC9 in D:\проекты и другое\clashofclans-main\main.exe: main() at D:/проекты и другое/clashofclans-main/main.cpp (14):
+
+     12:     btn[0] = {50, "обычные здания", "обычные здания"};
+     13:     btn[1] = {250, "защитные здания", "защитные здания"};
+=>   14:     btn[2] = {450, "ресурсы", "ресурсы"};
+     15: 
+     16:     Picture menuPic[count_pic];
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in int main() at D:\проекты и другое\clashofclans-main\main.cpp (7):
+
+      5: int main()
+      6: {
+=>    7:     txCreateWindow (1200, 700);
+      8:     //инициализация кнопок
+      9:     int count_btn=2;
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\program\codeblocks\mingw\include\txlib.h
+Compiled:	Oct 23 2023 19:59:20, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Oct 23 2023 19:59:25
+
+Run file:	D:\проекты и другое\clashofclans-main\main.exe
+Directory:	D:\проекты и другое\clashofclans-main
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\проекты и другое\clashofclans-main\main.exe, файл: d:\program\codeblocks\mingw\include\txlib.h, строка: 10851, функция: bool {anonymous}::TX::_txBuffer_Delete(HDC__**),
+
+Сообщение: Параметр "*dc" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005082FC (32-bit), Flags: CMdRe0, Thread: 0x4AD8 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0041075E in D:\проекты и другое\clashofclans-main\main.exe: _txBuffer_Delete() at d:/program/codeblocks/mingw/include/txlib.h (10851)
+# 1 0x00421DB7 in D:\проекты и другое\clashofclans-main\main.exe: txDeleteDC() at d:/program/codeblocks/mingw/include/txlib.h (13597)
+# 2 0x00422027 in D:\проекты и другое\clashofclans-main\main.exe: txDeleteDC() at d:/program/codeblocks/mingw/include/txlib.h (13619)
+
+# 3 0x0042CEF1 in D:\проекты и другое\clashofclans-main\main.exe: main() at D:/проекты и другое/clashofclans-main/main.cpp (172):
+
+    170:     for (int i=0; i<count_pic; i++)
+    171:     {
+=>  172:         txDeleteDC(centrPic[i].pic);
+    173:     }
+    174: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::_txBuffer_Delete(HDC__**) at d:\program\codeblocks\mingw\include\txlib.h (10851):
+
+  10849: $1  if (_TX_ARGUMENT_FAILED (dc)) return false;
+  10850: $   if (                   !*dc)  return false;
+=>10851: $   if (_TX_HDC_FAILED     (*dc)) return false;
+  10852: 
+  10853: $   if (!Win32::GetObjectType (Win32::GetCurrentObject (*dc, OBJ_BITMAP))) return false;
+
+# 1 in bool {anonymous}::TX::txDeleteDC(HDC__**) at d:\program\codeblocks\mingw\include\txlib.h (13597):
+
+  13595: 
+  13596: $   HDC  dc = *pdc;
+=>13597: $   bool ok = _txBuffer_Delete (pdc);
+  13598: $   if (!ok) return false;
+  13599: 
+
+# 2 in bool {anonymous}::TX::txDeleteDC(HDC) at d:\program\codeblocks\mingw\include\txlib.h (13619):
+
+  13617: bool txDeleteDC (HDC dc)
+  13618:     {
+=>13619: $1  return txDeleteDC (&dc);
+  13620:     }
+  13621: 
+
+# 3 in int main() at D:\проекты и другое\clashofclans-main\main.cpp (172):
+
+    170:     for (int i=0; i<count_pic; i++)
+    171:     {
+=>  172:         txDeleteDC(centrPic[i].pic);
+    173:     }
+    174: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	d:\program\codeblocks\mingw\include\txlib.h
+Compiled:	Oct 23 2023 20:00:54, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Oct 23 2023 20:00:58
+
+Run file:	D:\проекты и другое\clashofclans-main\main.exe
+Directory:	D:\проекты и другое\clashofclans-main
+
+--------------------------------------------------
